@@ -27,10 +27,8 @@ L_SYM = KC.MO(2)
 L_NUM = KC.MO(3)
 
 combos.combos = [
-    Chord((KC.W, KC.E),          KC.ESC),
     Chord((KC.X, KC.C),          KC.TAB),
-    Chord((KC.K, KC.L),          KC.ENT),
-    Chord((KC.I, KC.O),          KC.BSPACE),
+    Chord((KC.COMMA, KC.DOT),    KC.ENT),
     Chord((KC.SPACE, KC.LSHIFT), KC.LCTRL),
 ]
 
@@ -53,15 +51,15 @@ keyboard.keymap = [
     ],
     [ # EXT LAYER
         # LEFT
-        ____,               ____,              KC.AUDIO_VOL_DOWN,    KC.AUDIO_VOL_UP, ____,
-        KC.LCTL,            KC.LALT,           KC.LCMD,              KC.LSHIFT,       ____,        
-        ____,               ____,              ____,                 KC.TAB,          KC.V,    
+        ____,               ____,              KC.BSPACE,            ____,            ____,
+        KC.LCTL,            KC.LALT,           KC.LCMD,              KC.ESC,          ____,
+        ____,               ____,              ____,                 KC.TAB,          ____,
                                                                      KC.NO,           KC.TRNS,
 
         # RIGHT
         KC.HOME,            KC.PGDN,           KC.PGUP,              KC.END,          ____,
         KC.LEFT,            KC.DOWN,           KC.UP,                KC.RIGHT,        KC.BACKSPACE,
-        ____,               KC.ENT,            ____,                 ____,            KC.DEL,
+        ____,               ____,              ____,                 ____,            KC.DEL,
         KC.ENT,             L_NUM,
     ],
     [ # SYM LAYER
@@ -73,14 +71,14 @@ keyboard.keymap = [
 
         # RIGHT
         KC.LSFT(KC.N6),     KC.LSFT(KC.N7),    KC.LSFT(KC.N8),       KC.LSFT(KC.MINS), KC.SCOLON,
-        KC.LSFT(KC.SCOLON), KC.LSHIFT,         KC.LCMD,              KC.LALT,          KC.LCTRL,
+        KC.LSFT(KC.SCOLON), KC.ESC,            KC.LCMD,              KC.LALT,          KC.LCTRL,
         KC.LSFT(KC.BSLASH), KC.MINS,           KC.EQL,               KC.LSFT(KC.EQL),  KC.BSLASH,
         ____,              ____,
     ],
     [ # NUM LAYER
         # LEFT
-        ____,               ____,              ____,                 ____,             ____,
-        KC.LCTRL,           KC.LALT,           KC.LCMD,              KC.LSHIFT,        ____,
+        ____,               ____,              ____,                 ____,             KC.AUDIO_VOL_UP,
+        KC.LCTRL,           KC.LALT,           KC.LCMD,              KC.LSHIFT,        KC.AUDIO_VOL_DOWN,
         ____,               ____,              ____,                 ____,             ____,
                                                                      ____,             ____,
 
