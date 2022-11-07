@@ -8,33 +8,13 @@ from kmk.extensions.RGB import RGB
 #       : A0, A1, A2, A3
 #       : MOSI, MISO, SCK
 _KEY_CFG = [
-        # q = D7
-        # w = A0
-        # e = A1
-        # r = A2
-        # t = A3
-
-        # g = D0
-        # f = D10
-        # d = MOSI
-        # s = MISO
-        # a = SCK
-
-        # / = D2
-        # z = D3
-        # x = D4
-        # c = D5
-        # v = D6
-
-        # BACKSPACE = D8
-        # FN = D9
-    board.D7, board.A0, board.A1, board.A2, board.A3,
+    board.D7,  board.A0,   board.A1,   board.A2,  board.A3,
 
     board.SCK, board.MISO, board.MOSI, board.D10, board.D0,
 
-    board.D2, board.D3, board.D4, board.D5, board.D6,
+    board.D2,  board.D3,   board.D4,   board.D5,  board.D6,
 
-    board.D8, board.D9
+    board.D8,  board.D9
 
 ]
 
